@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Good Shepherd Parish</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Quando&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+
+<!---------sign-up------->
+
+<body>
+   <div class="container">
+
+      <div class="card">
+        
+        <div class="inner-box" id="card">
+          <div class="card-front">
+            <h2>LOGIN</h2>
+              <form>
+                  <input type="email" class ="input-box" placeholder="Email" Required>
+                  <input type="password" class ="input-box" placeholder="Password" Required>
+                  <button type="submit" class="submit-btn">Submit</button>
+                  <input type="checkbox"><span>Remember me</span>
+              </form>
+              
+              <button type="button" class="btn" onclick="openRegister()">Create Account</button>
+              <a href=""> Forgot Password </a>
+              
+        </div>
+             <div class="card-back">
+               
+              <h2>REGISTER</h2>
+              <form>
+                  <input type="text" class ="input-box" placeholder="Your name" Required>
+                  <input type="email" class ="input-box" placeholder="Email" Required>
+                  <input type="password" class ="input-box" placeholder="Password" Required>
+                  <input type="password" class ="input-box" placeholder="Confirm Password" Required>
+                  <button type="submit" class="submit-btn">Submit</button>
+                  <input type="checkbox"><span>Remember me</span>
+              </form>
+              
+              <button type="button" class="btn" onclick="openLogin()">Already have an account</button>
+              <a href=""> Forgot Password </a>
+            </div>
+      </div> 
+   </div>
+</div>
+
+    <script>
+        var card =  document.getElementById("card");
+
+        function openRegister(){
+          card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+          card.style.transform = "rotateY(0deg)";
+        }
+
+    </script>
+            
+
+
+</body> 
+
+</html>
