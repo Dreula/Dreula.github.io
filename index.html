@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Quando&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <linK rel=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 </head>
@@ -32,13 +33,21 @@
      </nav>
               <div class="text-box">
                      <h1>God is Good and Worthy of our Trust</h1>
-                     <p>He restores my soul<br>He guides me in paths of righteousness for his name's sake<br></p>
-                    <a href="sign.html" class="join-btn">Registration</a>
-                    <a href="https://live.victory.org/" class="watchlive-btn">Watch Live</a>
-                    <a href="https://bit.ly/LocationChurch"target="_blank" rel="noopener noreferrer"class="loc-btn">Location</a>
-
-
-             </div>
+                          <p>He restores my soul<br>He guides me in paths of righteousness for his name's sake<br></p>
+                                <a href="https://www.facebook.com/goodshepherdlpc/videos" class="watchlive-btn">Watch Live</a>
+                                <a href="https://bit.ly/LocationChurch"target="_blank" rel="noopener noreferrer"class="loc-btn">Location</a>
+ 
+                         <div class="dropdown">
+                              <button class="dropdown_btn">Get Involved</button>
+                              <div class="dropdown_content">
+                                   <a href="get-involved.html">Mother Butler</a>
+                                   <a href="#">Altar Server</a>
+                                   <a href="#">Music Ministry</a>
+                                   <a href="#">Tithes Collector</a>
+                                   <a href="#">Lectors and Commentators</a>
+                              </div>
+                         </div>
+              </div>
 </section>
                  <!------HOME----->
                  <section class="home">
@@ -181,6 +190,13 @@
                            navLinks.style.right ="-200px";
                              }
       </script>
+                      <script>
+                             const dropdownBtn = document.querySelector(".dropdown_btn")
+                             const dropdownContent = document.querySelector(".dropdown_content")
+                                  dropdownBtn.addEventListener("click",() =>{
+                                  dropdownContent.classlist.remove("hide"); 
+                   });
+                    </script>
 
  </section>
 </body> 
