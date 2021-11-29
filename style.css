@@ -908,10 +908,25 @@ span{
     display:block;
     }
     
-    
     .hide{
     display:none
     }
+
+    .motherbutler{
+        background-image: linear-gradient(rgba(85, 91, 122, 0.7), rgba(124, 131, 156, 0.7)),url(images/Springpoint\ Church.png);
+    }
+
+.backgroundfuck{
+        min-height: 100vh;
+        width:100%;
+        background-image: url(images/gt.jpg);
+        background-position:center;
+        background-size: cover;
+        position: relative;
+        background-repeat:no-repeat;
+        }
+    
+    
 
 
 
