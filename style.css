@@ -540,7 +540,7 @@ font-size: 16px;
     padding:0;
 }
 .Cstaff-col{
-    column-count: 6;
+    column-count: 3;
     column-width: 250px;
     flex-basis: 48%;
     padding:30px 2px;
@@ -549,83 +549,7 @@ font-size: 16px;
     width: 100%;
 }
 /*-----------event page----------*/
-.Inquiry{
-    padding:50px;
-    columns:  250px 2;
-}
 
-.inquiry-box div{
-    display: flex;
-    border-radius: 10px;
-    align-items: center;
-    justify-content:space-between;
-    padding:12px 12px;
-    width: 200px;
-    box-sizing: border-box;
-    color: rgb(109, 105, 105);
-}
-.inquiry-form ::placeholder{
-    font-size:12 px;
-    color:rgb(151, 145, 137);
-}
-.inquiry-box{
-    border:2px solid #99b3db;
-    margin: 50px 0;
-    padding:20px 12px;
-}
-.inquiry-box h3{
-    text-align: left;
-}
-.inquiry-form input, .inquiry-form textarea{
-    width: 100%;
-    padding:10px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background-color: #f1eded;
-}
-.inquiry-form button{
-    margin:10px 0;
-}
-.appointment-box h3{
-    text-align: left;
-}
-.appointment-box div{
-    display: flex;
-    border-radius: 10px;
-    align-items: center;
-    justify-content:space-between;
-    padding:12px 12px;
-    width: 200px;
-    box-sizing: border-box;
-    color: rgb(109, 105, 105);
-}
-
-.appointment-form ::placeholder{
-    font-size: 12px;
-    color:rgb(151, 145, 137);
-}
-
-.appointment-box{
-    border:2px solid #99b3db;
-    margin: 50px 0;
-    padding:20px 12px;
-    display: inline-table;
-}
-
-.appointment-form input, .appointment-form textarea{
-    width: 100%;
-    padding:10px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    background-color: #f1eded;
-}
-.appointment-form button{
-    margin:10px 0;
-}
 @media(max-width:700px){
     .sub-header h1{
         font-size: 24px ;
@@ -669,13 +593,13 @@ font-size: 16px;
 .churchcontact-col h5{
     font-size: 20px;
     margin-bottom: 5px;
-    color: #555;
+    color: rgb(14, 13, 13);
     font-weight: 400;
 }
 
  .churchcontact-col ::placeholder{
      font-size: 12px;
-     color: thistle;
+     color: rgb(82, 80, 82);
  }
  .churchcontact-col .join-btn .color-btn{
      padding: 15px 32px;
@@ -685,7 +609,7 @@ font-size: 16px;
     padding: 15px;
     margin-bottom: 17px;
     outline: none;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(7, 7, 7);
     box-sizing: border-box;
 }
 

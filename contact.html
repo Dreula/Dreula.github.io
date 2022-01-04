@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Shepherd Parish</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,23 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
+        <style>
+               /* Chrome, Safari, Edge, Opera */
+               input::-webkit-outer-spin-button,
+               input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+               margin: 0;
+               }
+               
+               /* Firefox */
+               input[type=number] {
+               -moz-appearance: textfield;
+               }
+          </style>
+
 </head>
 <body>
- <section class="sub-header">
+     <section class="sub-header">
      <nav>
           <a href="index.html"><img src="images/logoChurchf.png"></a>
          <div class="nav-links" id="navLinks" >
@@ -64,23 +78,68 @@
                <div>
                <i class="fa fa-envelope-o"></i>
                <span>
-                   <h5>info@gmail.com</h5>
+                   <h4>goodshepherdemail1@gmail.com</h4>
                    <p>Email us your query</p>
               </span>  
                </div>
           </div>  
          
           <div class="churchcontact-col">
-                <h2> Prayer Request</h2>
-                    <form action="https://formspree.io/f/mleaqqrn" method="POST"> 
-                         <input type="text" name="name" placeholder="Enter your name" required>
-                         <input type="email" name="email" placeholder="Enter your email address" required>
-                         <input type="text" name="subject" placeholder="Enter your inquiry" required>
-                         <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <h2> Appointments </h2><br>
+                <form onsubmit="sendEmail(); reset(); return false">
+                         <input id="name" type="text" placeholder="Name" required>
+                         <input id="email" type="email"  placeholder="Email address" required>
+                         <input id="phone" type="number"  placeholder="Contact no." min="10" >
+                         <input id="subject" type="text" list="subs" placeholder="Subject" required>
+                              <datalist id="subs">
+                              <option>Confession</option>
+                              <option>Baptism</option>
+                              <option>Wedding</option>
+                              <option> House Blessing</option>
+                              <option> Eatery Blessing</option>
+                              <option> Office Blessing</option>
+                              <option> Store Blessing</option>   
+                              <option> Others Blessing</option>
+                              <option> House Blessing</option>
+                              <option> Family Counselling</option>
+                              <option> Personal Counselling</option>
+                              <option> Marriage Counselling</option>
+                              <option> Funeral Mass</option>
+                              <option> Funeral Blessing</option>
+                              <option> URN Blessing</option>
+                              <option> Thankgiving Mass</option>
+                              <option> Holy Spirit Mass</option>
+                              <option> Anniversary Mass</option>
+                              </datalist>
+                         <input type="text" id="address" placeholder="Address (optional)" >
+                         <textarea id="message" rows="8" placeholder="Message" required></textarea>
                          <button type= "submit" class="join-btn color-btn">Send Message</button>
                      </form>
           </div> 
      </div>
+
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "phuelxrecovery73@gmail.com",
+            Password : "Pogiako09",
+            To : 'goodshepherdemail1@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : document.getElementById("subject").value,  
+            Body : "Name: " + document.getElementById("name").value
+                    +"<br><br>Email: " + document.getElementById("email").value
+                    +"<br>Phone: " + document.getElementById("phone").value
+                    +"<br>Address: " + document.getElementById("address").value
+                    +"<br><br> Message: " + document.getElementById("message").value
+        }).then(
+        message => alert("Message Sent Successfully")
+        );
+        }
+        
+    </script>
+
 
 </section>
 
@@ -89,38 +148,6 @@
   
 
    <!----------- footer -------------->
-
-
-<section class="footer"> 
-     <h1>Hour Service <p>Monday-Saturday 9:00 AM - 5:00 PM<br>
-          Sunday Servive  8:00 AM - 12:00 PM </p>
-     </h1>
-     
-     <h1> Location
-          <p>Sanggumay Street, <br>Doña Manuela Subdivision,<br> Las Pinas, 1740 Metro Manila</p>
-      </h1>
-      <div class="icon">
-           <h1>Follow Us</h1>
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-youtube"></i>
-      </div> 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
