@@ -261,36 +261,9 @@ p {
 }
 
 .row {
-    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-}
-
-.home {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 80px;
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-p {
-    color: #000;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.row {
-    margin-top: 5%;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -305,7 +278,7 @@ p {
 }
 
 .home-col img {
-    width: 100%
+    max-width: 100%
 }
 
 h3 {
@@ -329,71 +302,48 @@ h3 {
 
 /*-------feature----*/
 
-.featurevent {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 80px;
+.event {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-h1 {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 600;
-}
-
-p {
-    color: #000;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    padding: 10px;
-    text-align: center;
-}
-
-.row {
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.feature-col {
-    flex: 1 1 21rem;
-    display: flex;
+.updates {
+    flex: 1 1 23rem;
+    display: block;
     align-items: center;
     margin: 10px 20px;
     flex-direction: column;
     background: rgb(33, 138, 97);
-    ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     padding: 10px 20px;
     align-self: normal;
 }
 
-.feature-col img {
+.updates .img {
     max-width: 200px;
     margin: auto;
 }
 
-.feature-col h6 {
-    position: inherit;
+.updates:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.2);
+}
+
+.updates .p {
+    margin-bottom: 10px;
+}
+
+.updates .btn {
+    display: inline-block;
+    margin-top: auto;
+    background: rgb(42, 96, 197);
+    color: #fff;
     text-align: center;
-    font-weight: 500;
-    margin: 5px;
-}
-
-.feature-col:hover {
-    border: 1px solid;
-    padding: 5px;
-    box-shadow: 5px 5px 5px 5px #99b3db;
-}
-
-@media(max-width:700px) {
-    .row {
-        flex-direction: column;
-    }
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 

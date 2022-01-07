@@ -23,17 +23,19 @@ let row = document.getElementById('drow');
 function AddItemToCard(comment, link) {
     let div = document.createElement("div");
     let img = document.createElement('img');
-    let div1 = document.createElement('div');
-    let h6 = document.createElement('h5');
+    let p = document.createElement('p');
+    let a = document.createElement('a');
 
-    h6.innerHTML = comment;
-    div1.className = 'layer';
-    div1.appendChild(h6);
+    p.className = "text mt-3"
+    p.innerHTML = comment;
     img.src = link;
     img.style.width = "100%";
-    div.className = 'feature-col';
+    div.className = 'updates';
     div.appendChild(img);
-    div.appendChild(div1);
+    div.appendChild(p);
+    a.className = 'btn';
+    a.innerHTML = "View More";
+    div.appendChild(a);
 
     row.appendChild(div);
 }
