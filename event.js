@@ -24,7 +24,6 @@ function AddItemToCard(comment, link) {
     let div = document.createElement("div");
     let img = document.createElement('img');
     let p = document.createElement('p');
-    let a = document.createElement('a');
 
     p.className = "text mt-3"
     p.innerHTML = comment;
@@ -33,9 +32,6 @@ function AddItemToCard(comment, link) {
     div.className = 'updates';
     div.appendChild(img);
     div.appendChild(p);
-    a.className = 'btn';
-    a.innerHTML = "View More";
-    div.appendChild(a);
 
     row.appendChild(div);
 }
