@@ -938,11 +938,7 @@ span {
 
 /* Watch Live */
 
-.fb-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-    align-content: space-around;
+.grid {
+    display: grid;
+    place-items: center;
 }
